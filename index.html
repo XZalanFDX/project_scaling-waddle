@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECT_SCALING_WADDLE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike – Just Do It</title>
+  <link rel="stylesheet" href="css/cover.css" />
 </head>
 <body>
-    <H1>PROJECT_SCALING_WADDLE</H1>
-    <H1>UNDER CONSTUCTION!</H1>
+
+  <!-- ── VIDEO BACKGROUND ──────────────────────────────────── -->
+  <div class="video-bg" id="videoBg">
+    <video class="video-slide active" muted playsinline preload="auto">
+      <source src="resc/vid1.mp4" type="video/mp4" />
+    </video>
+    <video class="video-slide" muted playsinline preload="none">
+      <source src="resc/vid2.mp4" type="video/mp4" />
+    </video>
+    <video class="video-slide" muted playsinline preload="none">
+      <source src="resc/vid3.mp4" type="video/mp4" />
+    </video>
+    <video class="video-slide" muted playsinline preload="none">
+      <source src="resc/vid4.mp4" type="video/mp4" />
+    </video>
+    <video class="video-slide" muted playsinline preload="none">
+      <source src="resc/vid5.mp4" type="video/mp4" />
+    </video>
+    <video class="video-slide" muted playsinline preload="none">
+      <source src="resc/vid6.mp4" type="video/mp4" />
+    </video>
+    <video class="video-slide" muted playsinline preload="none">
+      <source src="resc/vid7.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- ── PROGRESS BARS ──────────── -->
+  <div class="progress-bars" id="progressBars"></div>
+
+  <!-- ── LOGO ──────────────────────────────────────────────── -->
+  <a class="cover-logo" href="store.html" aria-label="Nike Store">
+    <img src="resc/logowhite.png" alt="Nike" />
+  </a>
+
+
+  <!-- ── MAIN CONTENT ──────────────────────────────────────── -->
+  <main class="cover-content">
+    <h1 class="cover-title">
+      <span class="title-line" data-delay="0">JUST</span>
+      <span class="title-line" data-delay="1">DO IT</span>
+    </h1>
+    <a class="cover-btn" href="store.html">
+      <span>Tovább az áruházba</span>
+      <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </main>
+
+  <!-- ── SLIDE DOTS ─────────────── -->
+  <div class="slide-dots" id="slideDots"></div>
+
+
+  <script src="js/cover.js"></script>
 </body>
 </html>
