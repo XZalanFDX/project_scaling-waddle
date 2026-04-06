@@ -8,9 +8,20 @@
   --grey-mid:    #ededed;
   --grey-text:   #9e9e9e;
   --grey-border: #e0e0e0;
-  --font:        'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font:        'Helvetica Neue', Helvetica, sans-serif;
   --topbar-h:    32px;
   --nav-h:       72px;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeueLight.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeueBlack.otf') format('opentype');
+  font-weight: 700;
 }
 
 html { scroll-behavior: smooth; }
@@ -610,4 +621,123 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 @media (max-width: 600px) {
   .topbar__links { display: none; }
   .footer { padding: 48px 20px 32px; }
+}
+
+/*POPUP*/
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 12vh auto; 
+    padding: 50px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 87vh;
+    overflow-y: auto; 
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 6px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: 300; 
+    cursor: pointer;
+    color: #000;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
+
+.modal-header h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #8d8d8d;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.modal-header h3 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 0;
+    border-left: 8px solid #000;
+    padding-left: 20px;
+    letter-spacing: 0px;
+    line-height: 1.1;
+}
+
+.modal-body p {
+    margin-bottom: 22px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #111;
+}
+
+.signature-container {
+    margin-top: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.slogan {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900;
+    font-style:normal ;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.signature-img {
+    display: block;
+    max-width: 180px;
+    height: auto;
+    filter: grayscale(100%) contrast(1.2);
+    margin: 10px 0;
+}
+
+.sub-name {
+    font-size: 13px;
+    color: #8d8d8d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.minip {
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-top: 5px;
+    letter-spacing: 0px;
+    line-height: 1.1;
 }

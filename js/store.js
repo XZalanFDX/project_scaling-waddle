@@ -2,6 +2,30 @@
 (function () {
   'use strict';
 
+const btn = document.getElementById("sikersztori");
+  const modal = document.getElementById("myModal");
+  const closeBtn = document.getElementById("closeModalBtn");
+
+  // Megnyitás
+  btn.onclick = function() {
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Letiltja a háttér görgetését, amíg nyitva van
+  }
+
+  // Bezárás az X-szel
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  // Bezárás a háttérre kattintva
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  }
+
   /* ── Navbar scroll shadow ────────────────────────────────── */
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
