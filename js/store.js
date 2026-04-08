@@ -1,4 +1,3 @@
-/* store.js */
 (function () {
   'use strict';
 
@@ -6,19 +5,16 @@ const btn = document.getElementById("sikersztori");
   const modal = document.getElementById("myModal");
   const closeBtn = document.getElementById("closeModalBtn");
 
-  // Megnyitás
   btn.onclick = function() {
     modal.style.display = "block";
-    document.body.style.overflow = "hidden"; // Letiltja a háttér görgetését, amíg nyitva van
+    document.body.style.overflow = "hidden";
   }
 
-  // Bezárás az X-szel
   closeBtn.onclick = function() {
     modal.style.display = "none";
     document.body.style.overflow = "auto";
   }
 
-  // Bezárás a háttérre kattintva
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
@@ -26,13 +22,11 @@ const btn = document.getElementById("sikersztori");
     }
   }
 
-  /* ── Navbar scroll shadow ────────────────────────────────── */
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 10);
   }, { passive: true });
 
-  /* ── Mobile drawer ───────────────────────────────────────── */
   const hamburger      = document.getElementById('hamburger');
   const mobileDrawer   = document.getElementById('mobileDrawer');
   const drawerClose    = document.getElementById('drawerClose');
@@ -60,7 +54,6 @@ const btn = document.getElementById("sikersztori");
     if (e.key === 'Escape') closeDrawer();
   });
 
-  /* ── Shoe slider ─────────────────────────────────────────── */
   const track   = document.getElementById('sliderTrack');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
@@ -91,7 +84,6 @@ const btn = document.getElementById("sikersztori");
   window.addEventListener('resize', () => { current = 0; updateSlider(); }, { passive: true });
   updateSlider();
 
-  /* ── Touch swipe on slider ───────────────────────────────── */
   let touchX = 0;
   track.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
   track.addEventListener('touchend',   e => {
@@ -101,7 +93,6 @@ const btn = document.getElementById("sikersztori");
     updateSlider();
   });
 
-  /* ── Scroll reveal ───────────────────────────────────────── */
   const revealEls = document.querySelectorAll(
     '.shoe-card, .promo-card, .section-title, .section-header'
   );

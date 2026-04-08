@@ -1,6 +1,3 @@
-/* ── product.css — teljes termék oldal ─────────────────────── */
-
-/* ── Breadcrumb ─────────────────────────────────────────────── */
 .breadcrumb {
   padding: 14px 0;
   border-bottom: 1px solid var(--grey-border);
@@ -12,7 +9,6 @@
 .breadcrumb a:hover { color: var(--black); }
 .breadcrumb span:last-child { color: var(--black); font-weight: 500; }
 
-/* ── Product Detail Section ──────────────────────────────────── */
 .pd-section { padding: 48px 0 100px; }
 
 .pd-wrap {
@@ -29,7 +25,6 @@
   .pd-wrap { grid-template-columns: 1fr; gap: 32px; padding: 0 20px; }
 }
 
-/* ── Gallery ─────────────────────────────────────────────────── */
 .pd-gallery {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -41,7 +36,6 @@
   .pd-gallery { grid-template-columns: 1fr; }
 }
 
-/* Thumbnails */
 .pd-thumbs {
   display: flex;
   flex-direction: column;
@@ -66,7 +60,6 @@
 .pd-thumb.active { border-color: var(--black); }
 .pd-thumb:hover  { border-color: #999; }
 
-/* Main image */
 .pd-main-img-wrap {
   position: relative;
   background: var(--grey-bg);
@@ -108,7 +101,6 @@
   text-transform: uppercase;
 }
 
-/* ── Info Panel ─────────────────────────────────────────────── */
 .pd-info { display: flex; flex-direction: column; gap: 0; }
 
 .pd-info__top {
@@ -153,7 +145,6 @@
   margin-bottom: 20px;
 }
 
-/* Price */
 .pd-price-wrap {
   display: flex;
   align-items: baseline;
@@ -167,7 +158,6 @@
 .pd-price--sale { color: #e30000; }
 .pd-price-orig  { font-size: 15px; color: var(--grey-text); text-decoration: line-through; }
 
-/* Options */
 .pd-option { margin-bottom: 24px; }
 
 .pd-option__header {
@@ -177,39 +167,6 @@
   margin-bottom: 12px;
 }
 
-.pd-option__label {
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.pd-color-name {
-  font-size: 12px;
-  color: var(--grey-text);
-}
-
-/* Color swatches */
-.pd-colors {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.pd-color {
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  border: 2.5px solid transparent;
-  outline: 2.5px solid transparent;
-  outline-offset: 2px;
-  cursor: pointer;
-  padding: 0;
-  transition: outline-color .2s, transform .15s;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
-}
-.pd-color:hover  { transform: scale(1.1); }
-.pd-color.active { outline-color: var(--black); }
-
 .pd-size-guide {
   font-size: 12px;
   color: var(--black);
@@ -217,7 +174,6 @@
   text-underline-offset: 2px;
 }
 
-/* Size grid */
 .pd-sizes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
@@ -246,7 +202,6 @@
   min-height: 18px;
 }
 
-/* CTA */
 .pd-cta {
   display: flex;
   gap: 12px;
@@ -301,7 +256,6 @@
 .pd-wish-btn:hover { border-color: var(--black); }
 .pd-wish-btn svg   { width: 18px; height: 18px; }
 
-/* Perks */
 .pd-perks {
   display: flex;
   flex-direction: column;
@@ -320,7 +274,6 @@
   color: #444;
 }
 
-/* Accordion */
 .pd-desc { border-bottom: 1px solid var(--grey-border); }
 
 .pd-accordion {
@@ -387,7 +340,6 @@
 .pd-specs li span:first-child { color: var(--grey-text); }
 .pd-specs li span:last-child  { font-weight: 500; }
 
-/* ── Lightbox ────────────────────────────────────────────────── */
 .lightbox {
   position: fixed; inset: 0;
   background: rgba(0,0,0,.92);
@@ -422,7 +374,6 @@
 }
 .lightbox__close:hover { opacity: 1; }
 
-/* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .pd-cta { flex-direction: column; }
   .pd-wish-btn { justify-content: center; }

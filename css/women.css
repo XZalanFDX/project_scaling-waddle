@@ -1,13 +1,9 @@
-/* ── women.css — kategória + termék kártya stílusok ────────── */
-
-/* ── Active nav ─────────────────────────────────────────────── */
 .nav--active {
   font-weight: 700;
   border-bottom: 2px solid var(--black);
   padding-bottom: 2px;
 }
 
-/* ── Category Hero ──────────────────────────────────────────── */
 .cat-hero {
   position: relative;
   height: 52vh;
@@ -65,7 +61,6 @@
   .cat-hero__content { padding: 40px 24px; }
 }
 
-/* ── Filter Bar ─────────────────────────────────────────────── */
 .filter-bar {
   border-bottom: 1px solid var(--grey-border);
   position: sticky;
@@ -130,7 +125,6 @@
 }
 .sort-btn:hover { text-decoration: underline; }
 
-/* ── Product Grid ────────────────────────────────────────────── */
 .product-section { padding: 60px 0 100px; }
 
 .product-grid {
@@ -141,7 +135,6 @@
 @media (max-width: 960px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .product-grid { grid-template-columns: 1fr; } }
 
-/* ── Product Card ────────────────────────────────────────────── */
 .product-card {
   display: flex;
   flex-direction: column;
@@ -159,7 +152,6 @@
   cursor: pointer;
 }
 
-/* Media */
 .product-card__media {
   position: relative;
   aspect-ratio: 1 / 1;
@@ -181,7 +173,6 @@
 .product-card__media:hover .product-card__img--main  { opacity: 0; transform: scale(1.04); }
 .product-card__media:hover .product-card__img--hover { opacity: 1; transform: scale(1.04); }
 
-/* Wishlist */
 .wishlist-btn {
   position: absolute;
   top: 14px; right: 14px;
@@ -204,7 +195,6 @@
 .wishlist-btn svg { width: 16px; height: 16px; }
 .wishlist-btn.active svg { fill: #e30; stroke: #e30; }
 
-/* Badge */
 .badge {
   position: absolute;
   top: 14px; left: 14px;
@@ -219,7 +209,6 @@
 .badge--new  { background: var(--black); color: var(--white); }
 .badge--sale { background: #e30000;      color: var(--white); }
 
-/* Info */
 .product-card__info { display: flex; flex-direction: column; gap: 10px; }
 
 .product-card__meta { display: flex; flex-direction: column; gap: 2px; }
@@ -236,7 +225,6 @@
   font-weight: 400;
 }
 
-/* Variants */
 .product-card__variants {
   display: flex;
   align-items: center;
@@ -261,7 +249,6 @@
   font-weight: 500;
 }
 
-/* Bottom: price + add */
 .product-card__bottom {
   display: flex;
   align-items: center;

@@ -1,4 +1,3 @@
-/* ── Reset & Variables ─────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -38,7 +37,6 @@ a   { text-decoration: none; color: inherit; }
 ul  { list-style: none; }
 button { font-family: var(--font); cursor: pointer; border: none; background: none; }
 
-/* ── Container ─────────────────────────────────────────────── */
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -47,7 +45,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 @media (max-width: 1100px) { .container { padding: 0 32px; } }
 @media (max-width: 600px)  { .container { padding: 0 20px; } }
 
-/* ── Top Bar ───────────────────────────────────────────────── */
 .topbar {
   height: var(--topbar-h);
   background: var(--grey-mid);
@@ -69,7 +66,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .topbar__links a:hover { opacity: .6; }
 .topbar__sep { width: 1px; height: 12px; background: #bbb; }
 
-/* ── Navbar ────────────────────────────────────────────────── */
 .navbar {
   height: var(--nav-h);
   background: var(--white);
@@ -120,7 +116,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   gap: 12px;
 }
 
-/* Search */
 .search-wrap {
   position: relative;
   display: flex;
@@ -155,7 +150,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   pointer-events: none;
 }
 
-/* Icon buttons */
 .icon-btn {
   width: 36px; height: 36px;
   display: flex; align-items: center; justify-content: center;
@@ -179,7 +173,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   line-height: 1;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -204,7 +197,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   .hamburger { display: flex; }
 }
 
-/* ── Mobile Drawer ─────────────────────────────────────────── */
 .mobile-drawer {
   position: fixed;
   top: 0; left: 0;
@@ -250,7 +242,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 .drawer-backdrop.visible { opacity: 1; pointer-events: all; }
 
-/* ── Buttons ───────────────────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -284,7 +275,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   border: 2px solid var(--white);
 }
 
-/* ── Hero ──────────────────────────────────────────────────── */
 .hero {
   position: relative;
   height: calc(100vh - var(--nav-h) - var(--topbar-h));
@@ -340,7 +330,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 
 .hero__btns { display: flex; gap: 14px; flex-wrap: wrap; }
 
-/* Scroll indicator */
 .hero__scroll {
   position: absolute;
   bottom: 32px; left: 50%;
@@ -373,7 +362,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   .btn           { width: 100%; justify-content: center; }
 }
 
-/* ── Section commons ────────────────────────────────────────── */
 .section { padding: 80px 0; }
 
 .section-header {
@@ -390,7 +378,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   letter-spacing: -1px;
 }
 
-/* ── Arrow Buttons ─────────────────────────────────────────── */
 .arrow-btns { display: flex; gap: 8px; }
 
 .arrow-btn {
@@ -403,7 +390,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .arrow-btn:hover { background: var(--grey-border); transform: scale(1.05); }
 .arrow-btn svg { width: 18px; height: 18px; }
 
-/* ── Shoe Slider ───────────────────────────────────────────── */
 .slider-wrap { overflow: hidden; }
 
 .slider-track {
@@ -445,7 +431,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 @media (max-width: 900px) { .shoe-card { flex: 0 0 80%; } }
 @media (max-width: 600px) { .shoe-card { flex: 0 0 100%; } }
 
-/* ── Promo Grid ────────────────────────────────────────────── */
 .promo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -471,7 +456,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 .promo-card:hover .promo-card__media img { transform: scale(1.05); }
 
-/* dark gradient at bottom */
 .promo-card::before {
   content: '';
   position: absolute;
@@ -522,7 +506,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 
 .promo-card__btn svg { width: 18px; height: 18px; }
 
-/* ── Banner ────────────────────────────────────────────────── */
 .banner {
   position: relative;
   height: 380px;
@@ -552,7 +535,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   letter-spacing: -1px;
 }
 
-/* ── Footer ────────────────────────────────────────────────── */
 .footer {
   background: var(--white);
   padding: 64px 40px 40px;
@@ -607,7 +589,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .footer-legal a { color: #999; transition: color .2s; }
 .footer-legal a:hover { color: var(--black); }
 
-/* ── Animations on scroll ──────────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(32px);
@@ -623,7 +604,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   .footer { padding: 48px 20px 32px; }
 }
 
-/*POPUP*/
 .modal-overlay {
     display: none;
     position: fixed;

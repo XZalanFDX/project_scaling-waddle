@@ -1,4 +1,3 @@
-/* ── Reset & Base ──────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -29,7 +28,6 @@ html, body {
   cursor: default;
 }
 
-/* ── Video Background ──────────────────────────────────────── */
 .video-bg {
   position: fixed;
   inset: 0;
@@ -56,7 +54,6 @@ html, body {
     linear-gradient(to bottom, rgba(0,0,0,.5)  0%,  rgba(0,0,0,.0)  30%);
 }
 
-/* ── Progress Bars ─────────────────────────────────────────── */
 .progress-bars {
   position: fixed;
   top: 20px;
@@ -84,7 +81,6 @@ html, body {
   transition: width 0.1s linear;
 }
 
-/* ── Logo ──────────────────────────────────────────────────── */
 .cover-logo {
   position: fixed;
   top: 40px;
@@ -101,7 +97,6 @@ html, body {
   filter: brightness(0) invert(1);
 }
 
-/* ── Main Content ──────────────────────────────────────────── */
 .cover-content {
   position: fixed;
   bottom: 80px;
@@ -148,7 +143,6 @@ html, body {
 .title-line[data-delay="0"] { animation: revealLine .8s .5s cubic-bezier(.16,1,.3,1) forwards; }
 .title-line[data-delay="1"] { animation: revealLine .8s .7s cubic-bezier(.16,1,.3,1) forwards; }
 
-/* ── CTA Button ────────────────────────────────────────────── */
 .cover-btn {
   font-family: 'Helvetica Neue', sans-serif;
   display: inline-flex;
@@ -194,7 +188,6 @@ html, body {
 }
 .cover-btn:hover .btn-arrow { transform: translateX(4px); }
 
-/* ── Slide Dots ────────────────────────────────────────────── */
 .slide-dots {
   position: fixed;
   bottom: 88px;
@@ -222,8 +215,6 @@ html, body {
   transform: scale(1.5);
 }
 
-
-/* ── Keyframes ─────────────────────────────────────────────── */
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -245,7 +236,6 @@ html, body {
   100% { top: 100%; }
 }
 
-/* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .cover-content { left: 24px; bottom: 100px; }
   .cover-logo    { left: 24px; top: 32px; }
