@@ -1,8 +1,8 @@
-/* women.js — product card interactions */
+
 (function () {
   'use strict';
 
-  /* ── Scroll reveal ──────────────────────────────────────── */
+
   const cards = document.querySelectorAll('.product-card');
   const io = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
@@ -15,7 +15,7 @@
   }, { threshold: 0.1 });
   cards.forEach(c => io.observe(c));
 
-  /* ── Variant dot swaps image ────────────────────────────── */
+
   document.querySelectorAll('.product-card__variants').forEach(group => {
     const card = group.closest('.product-card');
     const imgMain  = card.querySelector('.product-card__img--main');
@@ -35,7 +35,7 @@
     });
   });
 
-  /* ── Wishlist toggle ────────────────────────────────────── */
+
   document.querySelectorAll('.wishlist-btn').forEach(btn => {
     btn.addEventListener('click', e => {
       e.preventDefault();
@@ -44,7 +44,7 @@
     });
   });
 
-  /* ── Filter chips ───────────────────────────────────────── */
+
   document.querySelectorAll('.chip').forEach(chip => {
     chip.addEventListener('click', () => {
       document.querySelectorAll('.chip').forEach(c => c.classList.remove('chip--active'));
