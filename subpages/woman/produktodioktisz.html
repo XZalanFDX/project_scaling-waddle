@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termék – Nike Store</title>
+  <link rel="stylesheet" href="../../css/store.css" />
+  <link rel="stylesheet" href="../../css/product.css" />
+</head>
+<body>
+
+  <!-- Felső fejléc -->
+  <div class="topbar">
+    <span class="topbar__brand">Nike Store</span>
+    <nav class="topbar__links">
+      <a href="../others/underconstruction.html">Súgó</a>
+      <span class="topbar__sep"></span>
+      <a href="../others/underconstruction.html">Üzletkereső</a>
+      <span class="topbar__sep"></span>
+      <a href="../others/underconstruction.html">Belépés</a>
+    </nav>
+  </div>
+
+  <!-- Alsó fejléc -->
+  <header class="navbar" id="navbar">
+    <a class="navbar__logo" href="../../store.html" aria-label="Főoldal">
+      <img src="../../resc/logoblack.png" alt="Nike" />
+    </a>
+    <nav class="navbar__menu">
+      <a href="../others/underconstruction.html">Új / Trending</a>
+      <a href="../woman/women.html" class="nav--active">Nő</a>
+      <a href="../man/men.html">Férfi</a>
+      <a href="../others/underconstruction.html">Gyerek</a>
+      <a href="../others/underconstruction.html">Sportswear</a>
+      <a href="../others/underconstruction.html">Nike SKIMS</a>
+      <a href="../others/underconstruction.html">Nike - happens with us</a>
+    </nav>
+    <div class="navbar__actions">
+      <div class="search-wrap">
+        <input class="navbar__search" type="search" placeholder="Keresés…" aria-label="Keresés" />
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </div>
+      <button class="icon-btn" aria-label="Profil">
+        <img src="../../resc/userblack.png" alt="" />
+      </button>
+      <button class="icon-btn" aria-label="Kosár">
+        <img src="../../resc/bagblack.png" alt="" />
+        <span class="cart-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hambi menü -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <nav class="drawer-nav">
+      <a href="../others/underconstruction.html">Új / Trending</a>
+      <a href="../woman/women.html">Nő</a>
+      <a href="../man/men.html">Férfi</a>
+      <a href="../others/underconstruction.html">Gyerek</a>
+      <a href="../others/underconstruction.html">Sportswear</a>
+      <a href="../others/underconstruction.html">Nike SKIMS</a>
+      <a href="../others/underconstruction.html">Nike - happens with us</a>
+    </nav>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Elérési út -->
+  <nav class="breadcrumb" aria-label="Navigáció">
+    <div class="container">
+      <a href="../../store.html">Főoldal</a>
+      <span aria-hidden="true">/</span>
+      <a href="../woman/women.html">Nő</a>
+      <span aria-hidden="true">/</span>
+      <span id="breadcrumbName">Termék</span>
+    </div>
+  </nav>
+
+  <!-- Termékadatok -->
+  <section class="pd-section">
+    <div class="pd-wrap">
+
+      <!-- Képek -->
+      <div class="pd-gallery">
+        <div class="pd-thumbs" id="pdThumbs">
+        </div>
+        <div class="pd-main-img-wrap">
+          <img class="pd-main-img" id="pdMainImg" src="" alt="" />
+          <div class="pd-img-badge" id="pdImgBadge"></div>
+        </div>
+      </div>
+
+      <!-- Adatok -->
+      <div class="pd-info">
+        <div class="pd-info__top">
+          <span class="pd-brand">Nike</span>
+        </div>
+        <h1 class="pd-name" id="pdName"></h1>
+        <p class="pd-category" id="pdCategory"></p>
+        <div class="pd-price-wrap">
+          <span class="pd-price" id="pdPrice"></span>
+          <span class="pd-price-orig" id="pdPriceOrig"></span>
+        </div>
+        <!-- Méret választó -->
+        <div class="pd-option">
+          <div class="pd-option__header">
+            <span class="pd-option__label">Méret</span>
+          </div>
+          <div class="pd-sizes" id="pdSizes">
+            <button class="pd-size" data-size="36">36</button>
+            <button class="pd-size" data-size="36.5">36½</button>
+            <button class="pd-size" data-size="37">37</button>
+            <button class="pd-size" data-size="37.5">37½</button>
+            <button class="pd-size" data-size="38">38</button>
+            <button class="pd-size" data-size="38.5">38½</button>
+            <button class="pd-size" data-size="39">39</button>
+            <button class="pd-size " data-size="39.5">39½</button>
+            <button class="pd-size" data-size="40">40</button>
+            <button class="pd-size" data-size="40.5">40½</button>
+            <button class="pd-size" data-size="41">41</button>
+          </div>
+        </div>
+
+        <!-- Kosár -->
+        <div class="pd-cta">
+          <button class="pd-add-btn" id="pdAddBtn">
+            <span id="pdAddBtnText">Kosárba</span>
+          </button>
+        </div>
+
+        <!-- Infók -->
+        <div class="pd-perks">
+          <div class="pd-perk"><span>Ingyenes szállítás 30 000 Ft felett</span></div>
+          <div class="pd-perk"><span>30 napos ingyenes visszaküldés</span></div>
+          <div class="pd-perk"><span>Nike Membership tagoknak extra kedvezmény</span></div>
+        </div>
+
+        <!-- Leírás -->
+        <div class="pd-desc">
+          <button class="pd-accordion" id="pdAccordion1" aria-expanded="true">
+            Termékleírás
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="pd-accordion__body" id="pdAccordionBody1">
+            <p id="pdDesc"></p>
+            <ul class="pd-features" id="pdFeatures"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Lábléc -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Cipők</h4><ul><li><a href="../others/underconstruction.html">Air Max</a></li><li><a href="../others/underconstruction.html">Pegasus</a></li><li><a href="../others/underconstruction.html">Dunk</a></li></ul></div>
+      <div class="footer-col"><h4>Ruházat</h4><ul><li><a href="../others/underconstruction.html">Pólók</a></li><li><a href="../others/underconstruction.html">Leggings</a></li><li><a href="../others/underconstruction.html">Dzsekik</a></li></ul></div>
+      <div class="footer-col"><h4>Sportoláshoz</h4><ul><li><a href="../others/underconstruction.html">Futás</a></li><li><a href="../others/underconstruction.html">Fitness</a></li></ul></div>
+      <div class="footer-col"><h4>Segítség</h4><ul><li><a href="../others/underconstruction.html">Üzletkereső</a></li><li><a href="../others/underconstruction.html">Visszaküldés</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nike, Inc. Minden jog fenntartva.</span>
+      <div class="footer-legal"><a href="../others/underconstruction.html">Adatvédelem</a><a href="../others/underconstruction.html">Sütik</a><a href="../others/underconstruction.html">ÁSZF</a></div>
+      <span>🇭🇺 Magyarország</span>
+    </div>
+  </footer>
+
+  <script src="../../js/store.js"></script>
+  <script src="../../js/product.js"></script>
+</body>
+</html>
