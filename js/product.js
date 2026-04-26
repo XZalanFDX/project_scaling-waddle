@@ -8,6 +8,32 @@
       window.location.href = '/subpages/kosar_basket/kosar.html';
     });
   }
+  const PRODUCTS = {
+    1: {
+      thumbs: [
+        '../../resc/women-shoe1.jpg',
+        '../../resc/women-shoe1b.jpg',
+        '../../resc/women-shoe1-detail.jpg',
+        '../../resc/women-shoe1-back.jpg',
+      ],
+    },
+    2: {
+      thumbs: [
+        '../../resc/women-shoe2.jpg',
+        '../../resc/women-shoe2b.jpg',
+        '../../resc/women-shoe2-detail.jpg',
+        '../../resc/women-shoe2-back.jpg',
+      ],
+    },
+     1: {
+      thumbs: [
+        '../../resc/men-shoe1.jpg',
+        '../../resc/men-shoe1b.jpg',
+        '../../resc/men-shoe1-detail.jpg',
+        '../../resc/men-shoe1-back.jpg',
+      ],
+    },
+  };
 
   const params  = new URLSearchParams(window.location.search);
   const id      = parseInt(params.get('id'), 10) || 1;
