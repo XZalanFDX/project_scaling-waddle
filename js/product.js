@@ -2,41 +2,12 @@
 (function () {
   'use strict';
 
-  const PRODUCTS = {
-    1: {
-      name:      'Nike Free Metcon 7',
-      category:  'Női cipő',
-      price:     '129.99 €',
-      priceOrig: '',
-      badge:     'Új',
-      badgeClass:'badge--new',
-      desc:      'A Nike Air Max 270 a Nike egyik legikonikusabb cipője, amelynek talpában a valaha készített legnagyobb Air egység található. A kényelmes és modern dizájn mindennapi viseletre tökéletes.',
-      features:  ['270° Air Max egység a sarkban', 'Könnyű Flyknit felsőrész', 'Rugalmas, könnyű talp', 'Párnázott, levehető talpbetét'],
-      thumbs: [
-        '../../resc/women-shoe1.jpg',
-        '../../resc/women-shoe1b.jpg',
-        '../../resc/women-shoe1-detail.jpg',
-        '../../resc/women-shoe1-back.jpg',
-      ],
-    },
-    2: {
-      name:      'Nike Shox Z SE',
-      category:  'Futócipő',
-      price:     '109.99 €',
-      priceOrig: '139.99 €',
-      badge:     '−20%',
-      badgeClass:'badge--sale',
-      desc:      'A Nike Pegasus 41 a futók egyik kedvenc cipője. Reaktív párnázással és frissített ReactX habbal rendelkezik, amely nagyobb visszapattanást biztosít minden lépésnél.',
-      features:  ['ReactX hab a jobb energiavisszatérítésért', 'Lélegző Flyknit felsőrész', 'Widened ZoomX párnázás elöl', 'Nem csúszó gumi talp'],
-      thumbs: [
-        '../../resc/women-shoe2.jpg',
-        '../../resc/women-shoe2b.jpg',
-        '../../resc/women-shoe2-detail.jpg',
-        '../../resc/women-shoe2-back.jpg',
-      ],
-    },
-  };
-
+  const cartBtn = document.querySelector('.cart-btn');
+  if (cartBtn) {
+    cartBtn.addEventListener('click', () => {
+      window.location.href = '/subpages/kosar_basket/kosar.html';
+    });
+  }
 
   const params  = new URLSearchParams(window.location.search);
   const id      = parseInt(params.get('id'), 10) || 1;

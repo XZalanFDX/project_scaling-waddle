@@ -22,6 +22,13 @@ const btn = document.getElementById("sikersztori");
     }
   }
 
+   const cartBtn = document.querySelector('.cart-btn');
+  if (cartBtn) {
+    cartBtn.addEventListener('click', () => {
+      window.location.href = '/subpages/kosar_basket/kosar.html';
+    });
+  }
+
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 10);

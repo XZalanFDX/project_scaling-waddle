@@ -2,40 +2,12 @@
 (function () {
   'use strict';
 
-  const PRODUCTS = {
-    1: {
-      name:      'Jordan Tiempo Streetgato SE',
-      category:  'Férfi cipő',
-      price:     '99.99 €',
-      priceOrig: '',
-      badge:     'Új',
-      badgeClass:'badge--new',
-      desc:      'Az utcai fociban minden a labdaérintésről szól. A Tiempo Streetgato cipőt ezért terveztük prémium bőrrel. Puha textúrája teljes irányítást biztosít a labda felett, így bármilyen védekezést áttörhetsz.',
-      features:  ['Párnázott talpbetét', 'Utcán, fedett pályán és teremben egyaránt jól használható', 'Stílus: II7579-016'],
-      thumbs: [
-        '../../resc/men-shoe1.jpg',
-        '../../resc/men-shoe1b.jpg',
-        '../../resc/men-shoe1-detail.jpg',
-        '../../resc/men-shoe1-back.jpg',
-      ],
-    },
-    2: {
-      name:      'Nike Air Force 1 ’07 LX Vibram',
-      category:  'Mindennapi cipő',
-      price:     '103.99 €',
-      priceOrig: '129.99 €',
-      badge:     '−20%',
-      badgeClass:'badge--sale',
-      desc:      'Az AF1 mindig is strapabíró cipő volt, de most a következő szintre emeljük. A tartós, textil felsőrész egy Vibram talpon helyezkedik el, melyet úgy terveztünk, hogy magabiztos lehess minden felületen. Készen állsz rá?',
-      features:  ['A Nike Air egység könnyű párnázást kínál.', 'A Vibram külsőtalp fokozza a tapadást és a tartósságot.', 'Stílus: IH1943-100'],
-      thumbs: [
-        '../../resc/men-shoe2.jpg',
-        '../../resc/men-shoe2b.jpg',
-        '../../resc/men-shoe2-detail.jpg',
-        '../../resc/men-shoe2-back.jpg',
-      ],
-    },
-  };
+const cartBtn = document.querySelector('.cart-btn');
+  if (cartBtn) {
+    cartBtn.addEventListener('click', () => {
+      window.location.href = '/subpages/kosar_basket/kosar.html';
+    });
+  }
 
 
   const params  = new URLSearchParams(window.location.search);

@@ -35,6 +35,12 @@
     });
   });
 
+const cartBtn = document.querySelector('.cart-btn');
+  if (cartBtn) {
+    cartBtn.addEventListener('click', () => {
+      window.location.href = '/subpages/kosar_basket/kosar.html';
+    });
+  }
 
   document.querySelectorAll('.wishlist-btn').forEach(btn => {
     btn.addEventListener('click', e => {
