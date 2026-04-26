@@ -14,12 +14,12 @@
 
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('fonts/HelveticaNeueLight.otf') format('opentype');
+  src: url('../fonts/HelveticaNeueLight.otf') format('opentype');
   font-weight: 300;
 }
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('fonts/HelveticaNeueBlack.otf') format('opentype');
+  src: url('../fonts/HelveticaNeueBlack.otf') format('opentype');
   font-weight: 700;
 }
 
