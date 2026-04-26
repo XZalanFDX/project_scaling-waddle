@@ -6,7 +6,7 @@
   <title>Nike Store - KOSÁR</title>
   <link rel="stylesheet" href="../../css/store.css" />
   <link rel="stylesheet" href="../../css/kosar.css" />
-  <link rel="icon" href="resc/logowhite.png">
+  <link rel="icon" href="../../resc/logowhite.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -25,7 +25,7 @@
 
   <!-- Alsó fejléc -->
   <header class="navbar" id="navbar">
-    <a class="navbar__logo" href="index.html" aria-label="Főoldal">
+    <a class="navbar__logo" href="../../index.html" aria-label="Főoldal">
       <img src="../../resc/logoblack.png" alt="Nike" />
     </a>
     <nav class="navbar__menu" aria-label="Főmenü">
@@ -71,76 +71,91 @@
     </nav>
   </div>
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
-<!--Kosar termekek-->
+
+  <!-- Kosár -->
   <section class="cart-section">
-<!--Termekek-->
+
+    <!-- Termekek -->
     <div>
       <h1 class="cart-heading">A kosarad</h1>
-      <p class="cart-count-label">5 termék</p>
-
+      <p class="cart-count-label">3 termék</p>
       <div class="cart-list">
-
-        <!-- 1 -->
+        <!-- T1 -->
         <div class="cart-item">
           <div class="cart-item__img">
-            <img src="../../resc/men-shoe1.jpg" alt="">
+            <img src="../../resc/men-shoe1.jpg" alt="Nike Air Max 90">
           </div>
           <div class="cart-item__info">
-            <span class="cart-item__name">Nike Air Max 90</span>
-            <span class="cart-item__sub">Fehér / Fekete / Szürke</span>
+            <span class="cart-item__name">Nike Jordan Tiempo Streetgato SE</span>
             <span class="cart-item__sub">Méret: 42</span>
             <span class="cart-item__qty">Mennyiség: 1</span>
           </div>
-          <span class="cart-item__price">34 995 Ft</span>
+          <span class="cart-item__price">99.99 €</span>
         </div>
-
-        <!-- 2 -->
+        <!-- T2 -->
         <div class="cart-item">
           <div class="cart-item__img">
-            <img src="../../resc/men-shoe2.jpg" alt="">
+            <img src="../../resc/men-shoe2.jpg" alt="Nike Air Force 1 '07">
           </div>
           <div class="cart-item__info">
-            <span class="cart-item__name">Nike Air Force 1 '07</span>
-            <span class="cart-item__sub">Piros / Fehér</span>
+            <span class="cart-item__name">Nike Air Force 1 '07 LX Vibram</span>
             <span class="cart-item__sub">Méret: 41</span>
             <span class="cart-item__qty">Mennyiség: 1</span>
           </div>
-          <span class="cart-item__price">29 995 Ft</span>
+          <span class="cart-item__price">103.99 €</span>
         </div>
+        <!-- T3 -->
+        <div class="cart-item">
+          <div class="cart-item__img">
+            <img src="../../resc/women-shoe1.jpg" alt="Nike Revolution 7">
+          </div>
+          <div class="cart-item__info">
+            <span class="cart-item__name">Nike Free Metcon 7</span>
+            <span class="cart-item__sub">Méret: 39</span>
+            <span class="cart-item__qty">Mennyiség: 1</span>
+          </div>
+          <span class="cart-item__price">129.99 €</span>
+        </div>
+      </div>
+    </div>
 
-        
-
-    <!-- Jobb: számla + gomb -->
+    <!-- JOBB: számla + gomb -->
     <aside class="cart-bill">
       <p class="cart-bill__title">Rendelés összesítő</p>
 
       <div class="bill-row">
-        <span class="bill-row__label">Nike Air Max 90 × 1</span>
-        <span class="bill-row__val">34 995 Ft</span>
+        <span class="bill-row__label">Nike Jordan Tiempo Streetgato S</span>
+        <span class="bill-row__val">99.99 €</span>
       </div>
       <div class="bill-row">
-        <span class="bill-row__label">Nike Air Force 1 '07 × 1</span>
-        <span class="bill-row__val">29 995 Ft</span>
+        <span class="bill-row__label">Nike Air Force 1 '07 LX Vibram</span>
+        <span class="bill-row__val">103.99 €</span>
       </div>
+      <div class="bill-row">
+        <span class="bill-row__label">Nike Free Metcon 7</span>
+        <span class="bill-row__val">129.99 €</span>
+      </div>
+  <!-- Valaszto vonal -->
       <hr class="bill-divider">
       <div class="bill-row">
         <span class="bill-row__label">Részösszeg</span>
-        <span class="bill-row__val">156 970 Ft</span>
+        <span class="bill-row__val">333,97 €</span>
       </div>
       <div class="bill-row bill-row--shipping">
         <span class="bill-row__label">Szállítás</span>
         <span class="bill-row__val">Ingyenes</span>
       </div>
+
       <hr class="bill-divider">
+
       <div class="bill-row bill-row--total">
         <span>Végösszeg</span>
-        <span>156 970 Ft</span>
+        <span>333,97 €</span>
       </div>
 
       <button class="checkout-btn">Tovább a fizetéshez</button>
-      <p class="bill-note">Ingyenes szállítás 25 000 Ft felett.<br>30 napos visszaküldési lehetőség.</p>
+      <p class="bill-note">Ingyenes szállítás 70 € felett.<br>30 napos visszaküldési lehetőség.</p>
     </aside>
-
   </section>
 
   <!-- Nike banner -->
@@ -208,7 +223,7 @@
     </div>
   </footer>
 
-  <script src="js/store.js"></script>
+  <script src="../../js/store.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     if (typeof AOS !== 'undefined') AOS.init({ once: true });
