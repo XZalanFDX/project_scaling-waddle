@@ -1,0 +1,168 @@
+.cart-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 56px;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .cart-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 36px 16px 72px;
+      }
+    }
+
+    .cart-heading {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin: 0 0 4px;
+    }
+
+    .cart-count-label {
+      font-size: 13px;
+      color: #888;
+      margin: 0 0 28px;
+    }
+
+    .cart-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart-item {
+      display: grid;
+      grid-template-columns: 104px 1fr auto;
+      gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid #ebebeb;
+      align-items: center;
+    }
+
+    .cart-item__img {
+      width: 104px;
+      height: 104px;
+      border-radius: 10px;
+      background: #f3f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cart-item__img svg {
+      width: 72px;
+      height: 72px;
+    }
+
+    .cart-item__info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .cart-item__name {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .cart-item__sub {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .cart-item__qty {
+      font-size: 12px;
+      color: #555;
+      margin-top: 6px;
+    }
+
+    .cart-item__price {
+      font-size: 14px;
+      font-weight: 700;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* ── Összesítő panel ── */
+    .cart-bill {
+      position: sticky;
+      top: 96px;
+      border: 1px solid #e8e8e8;
+      border-radius: 14px;
+      padding: 26px 22px 28px;
+      background: #fafafa;
+    }
+
+    .cart-bill__title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin: 0 0 16px;
+    }
+
+    .bill-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 7px 0;
+      color: #444;
+      border-top: 1px dashed #e8e8e8;
+    }
+
+    .bill-row:first-of-type { border-top: none; }
+
+    .bill-row__label { color: #666; }
+
+    .bill-divider {
+      border: none;
+      border-top: 2px solid #111;
+      margin: 12px 0 8px;
+    }
+
+    .bill-row--total {
+      font-size: 15px;
+      font-weight: 800;
+      color: #111;
+      border-top: none;
+    }
+
+    .bill-row--shipping .bill-row__label,
+    .bill-row--shipping .bill-row__val {
+      color: #1a8c3e;
+      font-weight: 600;
+    }
+
+    .checkout-btn {
+      display: block;
+      width: 100%;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 0;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .checkout-btn:hover {
+      background: #2d2d2d;
+      transform: translateY(-1px);
+    }
+
+    .bill-note {
+      font-size: 11px;
+      color: #aaa;
+      text-align: center;
+      margin-top: 12px;
+      line-height: 1.6;
+    }

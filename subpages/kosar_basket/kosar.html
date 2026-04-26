@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nike Store - KOSÁR</title>
-  <link rel="stylesheet" href="css/store.css" />
+  <link rel="stylesheet" href="../../css/store.css" />
+  <link rel="stylesheet" href="../../css/kosar.css" />
   <link rel="icon" href="resc/logowhite.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -25,9 +26,8 @@
   <!-- Alsó fejléc -->
   <header class="navbar" id="navbar">
     <a class="navbar__logo" href="index.html" aria-label="Főoldal">
-      <img src="resc/logoblack.png" alt="Nike" />
+      <img src="../../resc/logoblack.png" alt="Nike" />
     </a>
-
     <nav class="navbar__menu" aria-label="Főmenü">
       <a href="/subpages/others/underconstruction.html">Új / Trending</a>
       <a href="/subpages/woman/women.html">Nő</a>
@@ -36,9 +36,7 @@
       <a href="/subpages/others/underconstruction.html">Sportswear</a>
       <a href="/subpages/others/underconstruction.html">Nike SKIMS</a>
       <a href="/subpages/others/underconstruction.html">Nike - happens with us</a>
-      
     </nav>
-
     <div class="navbar__actions">
       <div class="search-wrap">
         <input class="navbar__search" type="search" placeholder="Keresés…" aria-label="Keresés" />
@@ -47,11 +45,11 @@
         </svg>
       </div>
       <button class="icon-btn" aria-label="Profil">
-        <img src="resc/userblack.png" alt="" aria-hidden="true" />
+        <img src="../../resc/userblack.png" alt="" aria-hidden="true" />
       </button>
       <button class="icon-btn cart-btn" aria-label="Kosár">
-        <img src="resc/bagblack.png" alt="" aria-hidden="true" />
-        <span class="cart-count">0</span>
+        <img src="../../resc/bagblack.png" alt="" aria-hidden="true" />
+        <span class="cart-count">5</span>
       </button>
       <button class="hamburger" id="hamburger" aria-label="Menü megnyitása" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -73,13 +71,81 @@
     </nav>
   </div>
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
+<!--Kosar termekek-->
+  <section class="cart-section">
+<!--Termekek-->
+    <div>
+      <h1 class="cart-heading">A kosarad</h1>
+      <p class="cart-count-label">5 termék</p>
 
-  <!--Kosár-->
-    
+      <div class="cart-list">
 
-  <!-- Alsóléc, nike green -->
+        <!-- 1 -->
+        <div class="cart-item">
+          <div class="cart-item__img">
+            <img src="../../resc/men-shoe1.jpg" alt="">
+          </div>
+          <div class="cart-item__info">
+            <span class="cart-item__name">Nike Air Max 90</span>
+            <span class="cart-item__sub">Fehér / Fekete / Szürke</span>
+            <span class="cart-item__sub">Méret: 42</span>
+            <span class="cart-item__qty">Mennyiség: 1</span>
+          </div>
+          <span class="cart-item__price">34 995 Ft</span>
+        </div>
+
+        <!-- 2 -->
+        <div class="cart-item">
+          <div class="cart-item__img">
+            <img src="../../resc/men-shoe2.jpg" alt="">
+          </div>
+          <div class="cart-item__info">
+            <span class="cart-item__name">Nike Air Force 1 '07</span>
+            <span class="cart-item__sub">Piros / Fehér</span>
+            <span class="cart-item__sub">Méret: 41</span>
+            <span class="cart-item__qty">Mennyiség: 1</span>
+          </div>
+          <span class="cart-item__price">29 995 Ft</span>
+        </div>
+
+        
+
+    <!-- Jobb: számla + gomb -->
+    <aside class="cart-bill">
+      <p class="cart-bill__title">Rendelés összesítő</p>
+
+      <div class="bill-row">
+        <span class="bill-row__label">Nike Air Max 90 × 1</span>
+        <span class="bill-row__val">34 995 Ft</span>
+      </div>
+      <div class="bill-row">
+        <span class="bill-row__label">Nike Air Force 1 '07 × 1</span>
+        <span class="bill-row__val">29 995 Ft</span>
+      </div>
+      <hr class="bill-divider">
+      <div class="bill-row">
+        <span class="bill-row__label">Részösszeg</span>
+        <span class="bill-row__val">156 970 Ft</span>
+      </div>
+      <div class="bill-row bill-row--shipping">
+        <span class="bill-row__label">Szállítás</span>
+        <span class="bill-row__val">Ingyenes</span>
+      </div>
+      <hr class="bill-divider">
+      <div class="bill-row bill-row--total">
+        <span>Végösszeg</span>
+        <span>156 970 Ft</span>
+      </div>
+
+      <button class="checkout-btn">Tovább a fizetéshez</button>
+      <p class="bill-note">Ingyenes szállítás 25 000 Ft felett.<br>30 napos visszaküldési lehetőség.</p>
+    </aside>
+
+  </section>
+
+  <!-- Nike banner -->
   <div class="banner">
-    <img src="resc/banner.png" alt="Nike banner" loading="lazy" />
+    <img src="../../resc/banner.png" alt="Nike banner" loading="lazy" />
     <div class="banner__overlay">
       <p class="banner__text">Move to Zero.</p>
       <button class="btn btn--outline-dark">Tudj meg többet</button>
@@ -130,7 +196,6 @@
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <span>© 2025 Nike, Inc. Minden jog fenntartva.</span>
       <div class="footer-legal">
@@ -145,5 +210,8 @@
 
   <script src="js/store.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    if (typeof AOS !== 'undefined') AOS.init({ once: true });
+  </script>
 </body>
 </html>
