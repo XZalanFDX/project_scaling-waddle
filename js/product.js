@@ -25,7 +25,7 @@
         '../../resc/women-shoe2-back.jpg',
       ],
     },
-     1: {
+     3: {
       thumbs: [
         '../../resc/men-shoe1.jpg',
         '../../resc/men-shoe1b.jpg',

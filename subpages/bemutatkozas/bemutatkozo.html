@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike Store - KOSÁR</title>
+  <link rel="stylesheet" href="../../css/store.css" />
+  <link rel="stylesheet" href="../../css/kosar.css" />
+  <link rel="icon" href="../../resc/logowhite.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Felső fejléc -->
+  <div class="topbar">
+    <span class="topbar__brand">Nike Store Hungary</span>
+    <nav class="topbar__links" aria-label="Segítség">
+      <a href="/subpages/others/underconstruction.html">Súgó</a>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <a href="/subpages/others/underconstruction.html">Üzletkereső</a>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <a href="/subpages/bemutatkozas/bemutatkozo.html">Rólunk</a>
+    </nav>
+  </div>
+
+  <!-- Alsó fejléc -->
+  <header class="navbar" id="navbar">
+    <a class="navbar__logo" href="../../index.html" aria-label="Főoldal">
+      <img src="../../resc/logoblack.png" alt="Nike" />
+    </a>
+    <nav class="navbar__menu" aria-label="Főmenü">
+      <a href="/subpages/others/underconstruction.html">Új / Trending</a>
+      <a href="/subpages/woman/women.html">Nő</a>
+      <a href="/subpages/others/underconstruction.html">Férfi</a>
+      <a href="/subpages/others/underconstruction.html">Gyerek</a>
+      <a href="/subpages/others/underconstruction.html">Sportswear</a>
+      <a href="/subpages/others/underconstruction.html">Nike SKIMS</a>
+      <a href="/subpages/others/underconstruction.html">Nike - happens with us</a>
+    </nav>
+    <div class="navbar__actions">
+      <div class="search-wrap">
+        <input class="navbar__search" type="search" placeholder="Keresés…" aria-label="Keresés" />
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </div>
+      <button class="icon-btn" aria-label="Profil">
+        <img src="../../resc/userblack.png" alt="" aria-hidden="true" />
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Kosár">
+        <img src="../../resc/bagblack.png" alt="" aria-hidden="true" />
+        <span class="cart-count">3</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menü megnyitása" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hambi menü -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="Bezárás">✕</button>
+    <nav class="drawer-nav">
+      <a href="/subpages/others/underconstruction.html">Új / Trending</a>
+      <a href="/subpages/woman/women.html">Nő</a>
+      <a href="/subpages/others/underconstruction.html">Férfi</a>
+      <a href="/subpages/others/underconstruction.html">Gyerek</a>
+      <a href="/subpages/others/underconstruction.html">Sportswear</a>
+      <a href="/subpages/others/underconstruction.html">Nike SKIMS</a>
+      <a href="/subpages/others/underconstruction.html">Nike - happens with us</a>
+    </nav>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+<div class="about-hero-container" style="max-width: 1100px; margin: 40px auto 0; padding: 0 24px;">
+    <div class="about-hero" style="width: 100%; height: 500px; background: #f3f3f3; border-radius: 14px; overflow: hidden;">
+      <img src="../../resc/bem.png" alt="Bemutatkozás" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </div>
+
+  <main class="cart-section" style="padding-top: 40px;">
+    
+    <div class="about-content">
+      <h1 class="cart-heading" style="font-size: 42px; margin-bottom: 20px;">Bemutatkozás</h1>
+      <div class="cart-item__sub" style="font-size: 16px; line-height: 1.8; color: #111;">
+        <p>Üdvözöllek a Nike Store Hungary világában! Küldetésünk egyszerű: inspirációt és innovációt nyújtani a világ minden sportolójának. Hiszünk abban, hogy ha van tested, sportoló vagy, és mi azért vagyunk itt, hogy segítsünk átlépni a saját korlátaidat.</p>
+        <br>
+        <p>Történetünk a versenypályákon kezdődött, de mára az utcai divat és a fenntartható jövő meghatározó szereplőivé váltunk. Minden egyes termékünk mögött többévnyi kutatás és a sportolók iránti tisztelet áll. Nemcsak cipőket és ruhákat készítünk, hanem egy közösséget építünk, ahol a teljesítmény és a stílus találkozik.</p>
+        <br>
+        <p>A "Move to Zero" kezdeményezésünkkel elköteleztük magunkat a zéró szén-dioxid-kibocsátás és a zéró hulladék mellett, hogy megóvjuk a sport jövőjét. Csatlakozz hozzánk ezen az úton, és találd meg a hozzád legjobban illő felszerelést, legyen szó profi sportról vagy a mindennapi kényelemről.</p>
+      </div>
+    </div>
+
+    <aside class="cart-summary">
+      <div class="cart-bill">
+        <h2 class="cart-bill__title">Elérhetőségek</h2>
+        
+        <div class="bill-row">
+          <span class="bill-row__label">E-mail:</span>
+          <span class="bill-row__val"><a href="mailto:info@nike.hu" ma>eMail írása</a></span>
+        </div>
+        
+        <div class="bill-row">
+          <span class="bill-row__label">Telefon:</span>
+          <span class="bill-row__val">+36 70 777 7777</span>
+        </div>
+
+        <div class="bill-row">
+          <span class="bill-row__label">Helyszín:</span>
+          <span class="bill-row__val">Budapest, Magyarország</span>
+        </div>
+
+        <p class="bill-note">
+          Kérdésed van? Írj nekünk bizalommal!
+        </p>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Nike banner -->
+  <div class="banner">
+    <img src="../../resc/banner.png" alt="Nike banner" loading="lazy" />
+    <div class="banner__overlay">
+      <p class="banner__text">Move to Zero.</p>
+      <button class="btn btn--outline-dark">Tudj meg többet</button>
+    </div>
+  </div>
+
+  <!-- Lábléc -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Cipők</h4>
+        <ul>
+          <li><a href="/subpages/others/underconstruction.html">Összes futócipő</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nike Air Max</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nike Air Force 1</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nike Lifestyle</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nike Edzőcipő</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nike Slides</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ruházat</h4>
+        <ul>
+          <li><a href="/subpages/others/underconstruction.html">Összes ruházat</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Pólók</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nadrágok</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Sportruházat</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sportoláshoz</h4>
+        <ul>
+          <li><a href="/subpages/others/underconstruction.html">Futás</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Fitness</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Futball</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Training Club</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Nike By You</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Segítség</h4>
+        <ul>
+          <li><a href="/subpages/others/underconstruction.html">Üzletkereső</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Rendeléskövetés</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Visszaküldés</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Kapcsolat</a></li>
+          <li><a href="/subpages/others/underconstruction.html">Súgó</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Nike, Inc. Minden jog fenntartva.</span>
+      <div class="footer-legal">
+        <a href="/subpages/others/underconstruction.html">Adatvédelem</a>
+        <a href="/subpages/others/underconstruction.html">Sütik</a>
+        <a href="/subpages/others/underconstruction.html">ÁSZF</a>
+        <a href="/subpages/others/underconstruction.html">Jogi nyilatkozat</a>
+      </div>
+      <span class="footer-region">🇭🇺 Magyarország</span>
+    </div>
+  </footer>
+
+  <script src="../../js/store.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    if (typeof AOS !== 'undefined') AOS.init({ once: true });
+  </script>
+</body>
+</html>
